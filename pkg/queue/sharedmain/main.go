@@ -59,7 +59,7 @@ const (
 	// Duration the /wait-for-drain handler should wait before returning.
 	// This is to give networking a little bit more time to remove the pod
 	// from its configuration and propagate that to all loadbalancers and nodes.
-	drainSleepDuration = 30 * time.Second
+	drainSleepDuration = 120 * time.Second
 
 	// certPath is the path for the server certificate mounted by queue-proxy.
 	certPath = queue.CertDirectory + "/" + certificates.CertName
